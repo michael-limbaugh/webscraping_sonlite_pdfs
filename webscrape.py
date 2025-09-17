@@ -17,7 +17,6 @@ link_column_name = 'Document Access'
 # Read URLs from CSV
 try:
     df = pd.read_csv(csv_filepath)
-    # Assuming URLs are in a column named 'url' (adjust if column name differs)
     urls = df[link_column_name].dropna().tolist()  # Drop any NaN values
 except FileNotFoundError:
     print(f"Error: CSV file {csv_filepath} not found.")

@@ -9,3 +9,7 @@ To use:
 1) Install required libraries
 2) update local csv (mine is named 'well_log_links.csv')
 3) Run the python code (webscrape.py)
+
+Example:
+well_log_links.csv : list of links
+downloaded_pdfs : resulting folder with saved pdfs

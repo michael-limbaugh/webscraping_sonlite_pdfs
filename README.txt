@@ -1,14 +1,22 @@
-This program:
-1) Uses an input csv file (named csv_filepath), saved locally in the project directory
-2) Reads the list of hyperlinks to sonlite based on the column name (link_column_name)
-3) Iterates through the list and scrapes the websites for all pdfs
-4) Saves pdfs according to Well API name and the document type in a local folder
-5) Logs periodic progress
+# Instructions to Run the PDF Downloader Script
 
-To use:
-1) Install required libraries
-2) update local csv (mine is named 'well_log_links.csv')
-3) Run the python code (webscrape.py)
+1. Install GeckoDriver:
+   - Download: `https://github.com/mozilla/geckodriver/releases'
+        - Download appropriate version for v0.36
+        - Unzip
+   - Move to PATH: `sudo mv geckodriver /usr/local/bin/`
+   - Make executable: `sudo chmod +x /usr/local/bin/geckodriver`
+   - Verify: `geckodriver --version`
+
+2. Usage:
+   - Ensure `well_log_links.csv` has "Api Num" and "Document Access" columns.
+   - Run in PyCharm with active venv: `python scrape_and_download_pdfs.py`
+   - PDFs are saved to:
+     - `downloaded_pdfs/well_logs/` for WELL_LOG files
+     - `downloaded_pdfs/well_file_historic/` for WELL_FILE_HISTORIC files
+     - `downloaded_pdfs/other_files/<well_api>/` for others
+   - Logs saved to `scrape_and_download_pdfs.log`
+
 
 Example:
 well_log_links.csv : list of links

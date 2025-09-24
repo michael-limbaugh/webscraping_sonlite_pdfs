@@ -15,7 +15,6 @@
      - `downloaded_pdfs/well_logs/` for WELL_LOG files
      - `downloaded_pdfs/well_file_historic/` for WELL_FILE_HISTORIC files
      - `downloaded_pdfs/other_files/<well_api>/` for others
-   - Logs saved to `scrape_and_download_pdfs.log`
 
 
 Example:

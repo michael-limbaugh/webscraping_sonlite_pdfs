@@ -7,6 +7,11 @@
    - Move to PATH: `sudo mv geckodriver /usr/local/bin/`
    - Make executable: `sudo chmod +x /usr/local/bin/geckodriver`
    - Verify: `geckodriver --version`
+1a. Windows add GeckoDriver to PATH:
+    save .exe in a folder 'C:\webdrivers'
+    About PC>Advanced system settings>Environment Variables>System variables>Path>Edit>New (add C:\webdrivers).
+    Restart computer
+    Verify in Pycharm terminal: 'geckodriver --version'
 
 2. Usage:
    - Ensure `well_log_links.csv` has "Api Num" and "Document Access" columns.
